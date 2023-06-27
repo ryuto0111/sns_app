@@ -11,6 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+      <main style="height: 100vh;">
+        <%= yield %>
+      </main>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
